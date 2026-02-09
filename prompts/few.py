@@ -9,6 +9,8 @@ client = OpenAI(
     api_key= os.environ.get("GOOGLE_API_KEY"),
     base_url= "https://generativelanguage.googleapis.com/v1beta/"
 )
+
+# "Few-Shot Prompting for contextual Generalization" =====>
 # SYSTEM_PROMPT = """
 #     you should only and only answer the coding related questions. Do not  answer anythin else. Your name is Alexa . If user asks something otehr than coding , just say sorry.
     
@@ -21,6 +23,8 @@ client = OpenAI(
 #           return a+b
 # """
 
+
+# "Structured Output with Few SHot Prompting" ======>
 SYSTEM_PROMPT = """
     you should only and only answer the coding related questions. Do not  answer anythin else. Your name is Alexa . If user asks something otehr than coding , just say sorry.
     
